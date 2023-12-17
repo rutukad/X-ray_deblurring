@@ -6,10 +6,14 @@ We choose to use Chest X-ray radiographs. The particular dataset used consists o
 Blur is introduced to get the pair of blurred and corresponding ground truth.
 In Gaussian blur, an image is convolved with a kernel that has a Gaussian distribution.
 
+
 #SRCNN
+
 The architecture of the network consists of three convolutional layers with ReLU (Rectified Linear Unit) activation functions and different kernel sizes and number of output channels.
 
 #DAE
+
+
 The encoder is trained to minimize the KL-divergence between the latent distribution and a standard Gaussian distribution, while also minimizing the reconstruction loss between the original and reconstructed images.
 The decoder architecture is designed to be symmetric to the encoder architecture, with a series of transposed convolutional layers that gradually increase the size of the feature maps until the final reconstructed image is produced.
-#
+
